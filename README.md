@@ -66,6 +66,7 @@ RDS Connection String - jdbc:mysql://upgraddetest.cyaielc9bmnf.us-east-1.rds.ama
 - Making sure that appropriate primary keys are present for the dimensions( You need to generate a primary key for each dimension table. For example for the 'Date' - dimension one way to generate the primary key 
   can be by adding "date" as the prefix to the row number i.e. 'date1', 'date2' and so on.)
 - Rearranging the fields if necessary(According to the target schema)
+  
 **Note:** Here, the tasks given above have to be done for all four dimension tables.
 
 - Creation of transaction fact table using PySpark
@@ -77,7 +78,8 @@ Commands to clean and transform the data:
 - Making sure that the appropriate primary key is present for the fact table
 - Rearranging the fields if necessary
 - Loading the dimension and fact tables into Amazon S3 bucket
-- Write the DataFrames containing the dimensions and fact table directly to an S3 bucket folder. [We will create different folders on your S3 bucket for different dimensions and fact table.]
+- Write the DataFrames containing the dimensions and fact table directly to an S3 bucket folder.
+- 
 **Redshift**
 
 Creation of a Redshift Cluster
